@@ -3,3 +3,12 @@
 <p>
   Time to say <%= link_to "Goodbye", say_goodbye_path %>!
 </p>
+ <%= 1+2 %><br>
+<%= "cow" + "boy" %><br>
+<%= 1.hour.from_now.localtime %>
+<hr>
+<% 
+@files = Dir.glob('app/views/*')
+for file in @files %>
+file name is: <%= file %><br>
+<% end %>
